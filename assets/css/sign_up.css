@@ -1,0 +1,11 @@
+label input[type="checkbox"] {
+    width: auto;  
+    margin-right: 10px; 
+}
+
+label.checkbox-label {
+    display: flex;
+    justify-content: center;  
+    gap: 5px;
+}
+

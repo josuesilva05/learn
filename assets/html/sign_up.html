@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/sign_up.css">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<h1>Área de Cadastro</h1>
+		<form method="GET" action="paginas/login.html">
+
+			<label>
+				Nome: <br>
+				<input type="text" name="user" required minlength="3">
+			</label><br>
+
+			<label>
+				Sobrenome: <br>
+				<input type="text" name="lastname">
+			</label><br>
+
+			<label>
+				Email: <br>
+				<input type="email" name="email" required pattern="^[a-zA-Z0-9_.+\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$">
+			</label><br>
+
+			<label>
+				Senha: <br>
+				<input type="password" name="password" required maxlength="12">
+			</label><br>
+
+			<label class="checkbox-label">
+				<input type="checkbox" name="termos" required>
+				Eu declaro que li e aceito os 
+				<a href="paginas/termos.html" target="_blank">termos de uso</a>
+			</label>
+
+			<button style="background-color: whitesmoke;">Cadastrar</button>
+		</form>
+	</div>
+</body>
+</html>
