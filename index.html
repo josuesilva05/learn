@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Área de Login</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <div class="login">
+	 <h1>Área de Login</h1>
+	<div class="photo_container">
+		<div class="photo">
+			<img src="/assets/images/WhatsApp Image 2025-07-14 at 21.14.50.jpeg" alt="">
+		</div>
+	</div>
+    <form method="GET" action="paginas/login.html">
+      <label>
+        Email: <br />
+        <input
+          type="email"
+          name="email"
+          required
+          pattern="^[a-zA-Z0-9_.+\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$"
+        />
+      </label>
+
+      <label>
+        Senha: <br />
+        <input type="password" name="password" required maxlength="12" />
+      </label>
+
+      <label class="forgot_password">
+        <a href="">Esqueceu a Senha?</a>
+      </label>
+
+      <button style="background-color: rgb(255, 255, 255);">Entrar</button>
+
+      <br /><br />
+
+      <label><a href="">Ainda não possui uma conta</a></label>
+    </form>
+  </div>
+</body>
+</html>
